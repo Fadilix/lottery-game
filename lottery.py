@@ -4,7 +4,6 @@ from random import sample
 import json
 from datetime import datetime
 
-
 class LotteryGame:
     def __init__(self, master):
         self.master = master
@@ -32,6 +31,7 @@ class LotteryGame:
         help_button = ttk.Button(
             self.master, text="Aide", command=self.show_help, style="Help.TButton"
         )
+        
         help_button.grid(row=0, column=9, pady=(20, 30), padx=(0, 20), sticky="e")
 
         # New menu bar
